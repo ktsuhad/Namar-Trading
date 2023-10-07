@@ -1,0 +1,128 @@
+.swiper-style {
+  width: 100%;
+  height: 700px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+}
+
+.color-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #162c537a;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 100px;
+}
+.color-layer h3 {
+  color: #6ed8f3;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.color-layer h1 {
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.color-layer p {
+  color: #fff;
+  font-size: 25px;
+}
+
+.color-layer .btn-style {
+  background-color: #091f45;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 25px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #fff;
+  background-color: #091f45;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+/* small screen maximum 768px */
+@media (max-width: 768px) {
+  .swiper-style {
+    height: 400px;
+  }
+
+  .color-layer h3 {
+    font-size: 20px;
+  }
+
+  .color-layer h1 {
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  .color-layer p {
+    font-size: 15px;
+  }
+
+  .color-layer .btn-style {
+    font-size: 15px;
+    width: max-content;
+  }
+}
+
+/* small screen maximum 576px */
+@media (max-width: 576px) {
+  .swiper-style {
+    height: 400px;
+  }
+  .color-layer {
+    padding: 50px;
+  }
+  .color-layer h3 {
+    font-size: 15px;
+  }
+
+  .color-layer h1 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .color-layer p {
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .color-layer .btn-style {
+    font-size: 12px;
+    width: max-content;
+    background-color: #091f45;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    --swiper-navigation-size: 20px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: #fff;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 6px;
+  }
+}
